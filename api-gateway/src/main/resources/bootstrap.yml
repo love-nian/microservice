@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        service-id: microservice-config-server
+      name: api-gateway
+      profile: dev
+      label: master
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaulfZone: http://localhost:8761/eureka/
